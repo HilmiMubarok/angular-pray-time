@@ -1,0 +1,20 @@
+.time {
+  font-size: 9.5em;
+  font-weight: bold;
+  color: #0b0b0b;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.pray-time {
+  margin-top: 100px;
+}
+
+.date {
+  margin-bottom: 100px;
+}
+
+.selected {
+  background-color: rgb(19, 218, 188) !important;
+}

@@ -1,0 +1,28 @@
+<div class="date">
+  {{ now | date : "EEEE, MMMM d, y" }}
+</div>
+<div class="time">
+  {{ time | async }}
+</div>
+<div class="pray-time">
+  <mat-chip-listbox aria-label="Pray Time">
+    <mat-chip [class.selected]="selected === 'Dhuhr'"
+      >Dhuhr: {{ dhuhr | async }}</mat-chip
+    >
+    <mat-chip [class.selected]="selected === 'Ashr'"
+      >Ashr: {{ asr | async }}</mat-chip
+    >
+    <mat-chip [class.selected]="selected === 'Maghrib'"
+      >Maghrib: {{ maghrib | async }}</mat-chip
+    >
+    <mat-chip [ngClass]="{ selected: selected === 'Isha' }"
+      >Isha: {{ isha | async }}</mat-chip
+    >
+    <mat-chip [class.selected]="selected === 'Imsak'"
+      >Imsak: {{ imsak | async }}</mat-chip
+    >
+    <mat-chip [class.selected]="selected === 'Fajr'"
+      >Subh: {{ fajr | async }}</mat-chip
+    >
+  </mat-chip-listbox>
+</div>
