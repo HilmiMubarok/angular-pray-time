@@ -1,4 +1,6 @@
-# Angular15Clock
+# Angular Pray Time
+
+this project is a simple angular application that shows the prayer times for a jakarta location.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
