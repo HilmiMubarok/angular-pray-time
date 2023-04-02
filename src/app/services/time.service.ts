@@ -23,7 +23,7 @@ export class TimeService {
   ): Observable<{ isCloseToNow: boolean; timeDiffToNow: number }> {
     return this.http
       .get(
-        'http://api.aladhan.com/v1/timingsByCity?city=Jakarta&country=Indonesia&method=8'
+        'https://api.aladhan.com/v1/timingsByCity?city=Jakarta&country=Indonesia&method=8'
       )
       .pipe(
         map((response: any) => response.data.timings[prayer]),
@@ -53,7 +53,7 @@ export class TimeService {
   getPrayTime(prayer: string) {
     return this.http
       .get(
-        'http://api.aladhan.com/v1/timingsByCity?city=Jakarta&country=Indonesia&method=8'
+        'https://api.aladhan.com/v1/timingsByCity?city=Jakarta&country=Indonesia&method=8'
       )
       .pipe(map((data: any) => data.data.timings[prayer]));
   }
